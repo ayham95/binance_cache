@@ -8,4 +8,5 @@ interface TransactionalCache<K, V> {
     fun begin()
     fun rollback()
     fun commit()
+    fun hasTransaction(): Boolean
 }
