@@ -33,7 +33,7 @@ class HomeViewModel(private val cache: TransactionalCache<String, String>) : Vie
     fun delete() {
         val key = state.value.key
         val commands = state.value.commands + Command.Delete(key)
-        cache.delete(key) != null
+        cache.delete(key)
         val newState = state.value.copy(value = "", key = "", commands = commands)
         _state.value = newState
         changeButtonsState()
