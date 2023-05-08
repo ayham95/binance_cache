@@ -2,8 +2,7 @@
 
 This is a simplified cache app built with Android Kotlin. The app allows you to store key-value pairs in a cache, and supports basic operations like `get`, `set`, `delete`, and `count`. It also supports transactions, which can be used to group multiple operations into a single, atomic operation.
 
-![preview](preview/binance_cache.png)
-
+<img src="preview/binance_cache.png" alt="preview" width="300">
 ## Overview and Architecture
 Even though the app is simple, it is important to showcase scalability through architecture and package structure. This project is implemented using the MVVM (Model-View-ViewModel) architecture pattern with Jetpack Compose as the UI toolkit. It also follows a modular package structure that separates concerns and promotes easy maintenance and scalability. The use of ViewModel ensures that the data is persisted across configuration changes, while Jetpack Compose ensures the UI remains reactive and flexible. Overall it can be easily scaled and adapted to more complex projects.
 
