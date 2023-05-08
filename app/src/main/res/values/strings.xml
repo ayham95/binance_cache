@@ -1,3 +1,23 @@
 <resources>
-    <string name="app_name">binance_cache</string>
+    <string name="app_name">Binance Cache</string>
+    <string name="enter_key_hint">Enter Key</string>
+    <string name="enter_value_hint">Enter Value</string>
+    <string name="alert_dialog_delete_title">Are you sure you want to delete?</string>
+    <string name="alert_dialog_body_text">This cannot be undone</string>
+    <string name="alert_dialog_rollback_title">Are you sure you want to Rollback?</string>
+    <string name="alert_dialog_commit_title">Are you sure you want to Commit?</string>
+    <string name="btn_begin">BEGIN</string>
+    <string name="btn_rollback">ROLLBACK</string>
+    <string name="btn_commit">COMMIT</string>
+    <string name="btn_get">GET</string>
+    <string name="btn_set">SET</string>
+    <string name="btn_delete">DELETE</string>
+    <string name="alert_dialog_confirm_btn">Confirm</string>
+    <string name="alert_dialog_dismiss_btn">Dismiss</string>
+    <string name="cmd_item_begin">> BEGIN</string>
+    <string name="cmd_item_commit">> COMMIT</string>
+    <string name="cmd_item_rollback">> ROLLBACK</string>
+    <string name="btn_count">COUNT</string>
+    <string name="value_not_set_error">Value not set</string>
+    <string name="no_transactions_error">No Transactions</string>
 </resources>

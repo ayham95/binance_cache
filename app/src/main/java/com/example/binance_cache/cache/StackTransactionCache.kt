@@ -52,6 +52,9 @@ class StackTransactionCache<K, V>(private val cache: Cache<K, V>) : Transactiona
         transactionStack.pop()
     }
 
+    override fun hasTransaction(): Boolean = transactionStack.isNotEmpty()
+
+
     private fun rollbackPut(operation: TransactionOperation.Put<K, V>) {
         if (operation.originalValue != null) {
             cache.put(operation.key, operation.originalValue)
