@@ -16,7 +16,7 @@ class StackTransactionCacheTest {
     }
 
     @Test
-    fun `should store key value pairs and fetch a value by key`() {
+    fun `put should store key value pairs and fetch a value by key`() {
         val key = "foo"
         val value = "123"
 
@@ -27,7 +27,7 @@ class StackTransactionCacheTest {
     }
 
     @Test
-    fun `should delete a pair given the key`() {
+    fun `delete should delete a pair given the key`() {
         val key = "foo"
         val value = "123"
 
@@ -37,7 +37,7 @@ class StackTransactionCacheTest {
     }
 
     @Test
-    fun `should count value occurrences`() {
+    fun `count should count value occurrences`() {
         val key1 = "foo"
         val value1 = "123"
         val key2 = "bar"
@@ -54,7 +54,7 @@ class StackTransactionCacheTest {
     }
 
     @Test
-    fun `should begin a transaction when begin is called`() {
+    fun `begin should begin a transaction when begin is called`() {
         val key = "foo"
         val value = "123"
 
@@ -68,7 +68,7 @@ class StackTransactionCacheTest {
 
 
     @Test
-    fun `should commit a transaction when commit is called after begin`() {
+    fun `commit should commit a transaction when commit is called after begin`() {
         val key = "foo"
         val value1 = "123"
         val value2 = "456"
@@ -84,7 +84,7 @@ class StackTransactionCacheTest {
     }
 
     @Test
-    fun `should rollback a transaction when rollback is called after begin`() {
+    fun `rollback should rollback a transaction when rollback is called after begin`() {
 
         val key = "foo"
         val value1 = "123"
@@ -100,7 +100,7 @@ class StackTransactionCacheTest {
     }
 
     @Test
-    fun `should handle multiple transactions`() {
+    fun `it should handle multiple transactions`() {
 
         val key = "foo"
         val value1 = "123"

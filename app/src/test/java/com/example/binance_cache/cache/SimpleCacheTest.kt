@@ -13,7 +13,7 @@ class SimpleCacheTest {
     }
 
     @Test
-    fun `should store key value pairs and fetch a value by key`() {
+    fun `put should store key value pairs and fetch a value by key`() {
         val key = "foo"
         val value = "123"
 
@@ -23,7 +23,7 @@ class SimpleCacheTest {
     }
 
     @Test
-    fun `should delete a pair given the key`() {
+    fun `delete should delete a pair given the key`() {
         val key = "foo"
         val value = "123"
 
@@ -34,7 +34,7 @@ class SimpleCacheTest {
     }
 
     @Test
-    fun `should count value occurrences`() {
+    fun `count should count value occurrences`() {
         val key1 = "foo"
         val value1 = "123"
         val key2 = "bar"
